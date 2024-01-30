@@ -9,13 +9,40 @@ a {
 ul,
 ol {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
-
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /* ======Header====== */
 
 .header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+  display: flex;
+  align-items: center;
 }
 .header-navigation {
+  display: flex;
+  align-items: center;
 }
 .header-logo {
   color: #4d5ae5;
@@ -25,11 +52,14 @@ ol {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 .header-logo-second-part {
   color: #2e2f42;
 }
 .header-menu-list {
+  display: flex;
+  gap: 40px;
 }
 .header-menu-item {
 }
@@ -39,6 +69,8 @@ ol {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
+  display: block;
 }
 .header-menu-link:hover,
 .header-menu-link:focus {
@@ -46,8 +78,11 @@ ol {
 }
 .address {
   font-style: normal;
+  margin-left: auto;
 }
 .address-list {
+  display: flex;
+  gap: 40px;
 }
 .address-list-item {
 }
@@ -66,6 +101,7 @@ ol {
 
 .hero {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 .hero-title {
   color: #fff;
@@ -74,6 +110,9 @@ ol {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  width: 496px;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 .hero-btn {
   color: #fff;
@@ -84,6 +123,13 @@ ol {
   letter-spacing: 0.04em;
   cursor: pointer;
   background-color: #4d5ae5;
+  margin: 0 auto;
+  display: block;
+  border-radius: 4px;
+  padding: 16px 32px;
+  border: none;
+  min-width: 169px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -93,10 +139,14 @@ ol {
 /* ======Benefits====== */
 
 .benefits {
+  padding: 120px 0;
 }
 .benefits-list {
+  display: flex;
+  gap: 24px;
 }
 .benefits-list-item {
+  flex-basis: calc((100% - 72px) / 4);
 }
 .benefits-subtitle {
   color: #2e2f42;
@@ -104,6 +154,7 @@ ol {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .benefits-list-text {
   font-size: 16px;
@@ -115,6 +166,7 @@ ol {
 
 .team {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
 .team-title {
   color: #2e2f42;
@@ -124,13 +176,24 @@ ol {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .team-list {
+  display: flex;
+  gap: 24px;
 }
 .team-list-item {
   background-color: #fff;
+  flex-basis: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 .team-image {
+}
+.team-container {
+  padding: 32px 0;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .team-subtitle {
   color: #2e2f42;
@@ -138,16 +201,20 @@ ol {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  text-align: center;
 }
 .team-list-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 /* Our portfolio */
 
 .portfolio {
+  padding: 120px 0;
 }
 .portfolio-title {
   color: #2e2f42;
@@ -157,12 +224,21 @@ ol {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 .portfolio-list-item {
 }
 .portfolio-image {
+}
+.portfolio-container {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .portfolio-subtitle {
   color: #2e2f42;
@@ -170,6 +246,7 @@ ol {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .portfolio-list-text {
   font-size: 16px;
@@ -181,6 +258,7 @@ ol {
 
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 .footer-logo {
   color: #4d5ae5;
@@ -190,6 +268,8 @@ ol {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 18px;
+  display: block;
 }
 .footer-logo-second-part {
   color: #f4f4fd;
@@ -199,4 +279,5 @@ ol {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  width: 264px;
 }
